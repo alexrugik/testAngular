@@ -1,17 +1,8 @@
 import {Routes} from '@angular/router';
-import {OneComponent} from '../components/one/one.component';
-import {TwoComponent} from '../components/two/two.component';
-import {PageNotFoundComponent} from '../components/page-not-found/page-not-found.component';
-import {ThreeComponent} from '../components/three/three.component';
+import {LoginPageComponent} from './components/login-page/login-page.component';
+import {RegisterPageComponent} from './components/register-page/register-page.component';
 
 export const appRoutes: Routes = [
-  {path: 'one', component: OneComponent},
-  {path: 'two', component: TwoComponent},
-  {path: 'three', component: ThreeComponent, data: {title: 'Heroes List'}},
-  {
-    path: '',
-    redirectTo: '/one',
-    pathMatch: 'full'
-  },
-  {path: '**', component: PageNotFoundComponent}
+  {path: 'login', component: LoginPageComponent},
+  {path: 'register', component: RegisterPageComponent},
 ];

@@ -12,7 +12,12 @@ import {
   MdTabsModule
 } from '@angular/material';
 
+import {AuthGuard} from '../../guards/auth.guard';
+
 @NgModule({
+  providers: [
+    AuthGuard
+  ],
   imports: [],
   exports: [
     RouterModule,

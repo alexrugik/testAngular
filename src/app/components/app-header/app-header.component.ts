@@ -8,9 +8,9 @@ interface TabConfig {
 }
 
 const tabsConfig: TabConfig[] = [
-  {label: 'One', routerLink: 'one'},
-  {label: 'Two', routerLink: 'two'},
-  {label: 'Three', routerLink: 'three'},
+  {label: 'One', routerLink: '/one'},
+  {label: 'Two', routerLink: '/two'},
+  {label: 'Three', routerLink: '/three'},
 ];
 
 @Component({
