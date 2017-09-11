@@ -10,7 +10,7 @@ import {PageNotFoundComponent} from './components/page-not-found/page-not-found.
 
 export const appRoutes: Routes = [
   {path: 'login', component: LoginPageComponent},
-  {path: 'register', component: RegisterPageComponent},
+  {path: 'registration', component: RegisterPageComponent},
   {
     path: '',
     component: HomePageComponent,

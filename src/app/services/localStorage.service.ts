@@ -10,11 +10,11 @@ export class LocalStorageService {
   constructor() {
   }
 
-  setItem(key: string, data: any) {
+  public setItem(key: string, data: any): void {
     this.$localStorage.setItem(this.updateKey(key), data);
   }
 
-  getItem(key: string) {
+  public getItem(key: string): string {
     return this.$localStorage.getItem(this.updateKey(key));
   }
 
