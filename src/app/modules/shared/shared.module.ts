@@ -13,6 +13,7 @@ import {
 } from '@angular/material';
 
 import {AuthGuard} from '../../guards/auth.guard';
+import {ServicesModule} from '../../services/services.module';
 
 @NgModule({
   providers: [
@@ -26,6 +27,7 @@ import {AuthGuard} from '../../guards/auth.guard';
     CommonModule,
     FormsModule,
     BrowserAnimationsModule,
+    ServicesModule
   ],
   declarations: []
 })

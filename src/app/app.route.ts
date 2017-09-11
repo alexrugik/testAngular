@@ -12,7 +12,9 @@ export const appRoutes: Routes = [
   {path: 'login', component: LoginPageComponent},
   {path: 'register', component: RegisterPageComponent},
   {
-    path: '', component: HomePageComponent, canActivate: [AuthGuard],
+    path: '',
+    component: HomePageComponent,
+    canActivate: [AuthGuard],
     children: [
       {path: 'one', component: OneComponent},
       {path: 'two', component: TwoComponent},
